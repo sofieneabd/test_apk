@@ -9,7 +9,7 @@ def sof(p: ft.Page):
    p.horizontal_alignment=ft.CrossAxisAlignment.CENTER
    lbl= ft.Text("First App تطبيقي الأول", color="Black", size=20)
    def fermer(e):
-        page.window.destroy()  # Ferme la fenêtre
+        p.window.destroy()  # Ferme la fenêtre
    
    info='''
    name= sofiene
