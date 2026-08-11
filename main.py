@@ -8,7 +8,9 @@ def sof(p: ft.Page):
    p.vertical_alignment= ft.MainAxisAlignment.START
    p.horizontal_alignment=ft.CrossAxisAlignment.CENTER
    lbl= ft.Text("First App تطبيقي الأول", color="Black", size=20)
-
+   def fermer(e):
+        page.window.destroy()  # Ferme la fenêtre
+   
    info='''
    name= sofiene
    age=43
@@ -17,7 +19,7 @@ def sof(p: ft.Page):
 
    p.add(lbl,
          lb2,
-         ft.ElevatedButton("Close Me", on_click= p.close_in_app_web_view, icon=ft.Icons.CLOSE),
+         ft.ElevatedButton("Close Me", on_click= fermer, icon=ft.Icons.CLOSE),
          ft.TextField(label="write here", icon=ft.Icons.INFO)
          )
    p.update()
